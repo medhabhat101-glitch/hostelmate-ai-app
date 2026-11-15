@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22213c" />
+  <title>Warden login — HostelMate AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body auth-warden" data-login-role="warden">
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <main class="auth-page">
+    <aside class="auth-side">
+      <a class="brand" href="1index.html"><span class="brand-mark">⌂</span><span>HostelMate <b>AI</b></span></a>
+      <div class="auth-side-copy">
+        <span class="eyebrow">WARDEN / ADMIN PORTAL</span>
+        <h1>A calmer way<br><span>to run the hostel.</span></h1>
+        <p>Review complaints, approve leave, post announcements and keep track of every student in one place.</p>
+        <ul class="auth-points"><li>⌁ Triage complaints by priority</li><li>↗ Approve or reject leave</li><li>✳ Publish hostel announcements</li></ul>
+      </div>
+      <small class="auth-side-foot">Demo project · Frontend only</small>
+    </aside>
+    <section class="auth-card-wrap">
+      <form class="auth-card" id="loginForm" autocomplete="off">
+        <span class="auth-role-badge">🛡️ Warden login</span>
+        <h2>Warden sign in</h2>
+        <p class="auth-sub">Staff access only. Enter your name and access code.</p>
+        <div class="field"><label for="loginName">Your name</label><input id="loginName" required maxlength="40" placeholder="e.g. Mr. Sharma" /></div>
+        <div class="field"><label for="loginCode">Access code</label><input id="loginCode" type="password" required maxlength="30" placeholder="Enter warden access code" autocomplete="off" /><small>Demo access code: <b>warden123</b></small></div>
+        <p class="auth-error" id="authError" role="alert"></p>
+        <button class="btn btn-primary full-btn" type="submit">Log in as warden <span>→</span></button>
+        <div class="auth-switch">Are you a student? <a href="student-login.html">Go to student login</a></div>
+        <a class="auth-back" href="1index.html">← Back to home</a>
+      </form>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>

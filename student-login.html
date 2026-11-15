@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5b43f5" />
+  <title>Student login — HostelMate AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body auth-student" data-login-role="student">
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <main class="auth-page">
+    <aside class="auth-side">
+      <a class="brand" href="1index.html"><span class="brand-mark">⌂</span><span>HostelMate <b>AI</b></span></a>
+      <div class="auth-side-copy">
+        <span class="eyebrow">STUDENT PORTAL</span>
+        <h1>Your hostel,<br><span>in your pocket.</span></h1>
+        <p>Report issues, check the mess menu, request leave, book facilities and find lost belongings.</p>
+        <ul class="auth-points"><li>⌁ Complaints with AI categorizing</li><li>♨ Mess menu &amp; meal feedback</li><li>↗ Digital leave requests</li></ul>
+      </div>
+      <small class="auth-side-foot">Demo project · Frontend only</small>
+    </aside>
+    <section class="auth-card-wrap">
+      <form class="auth-card" id="loginForm" autocomplete="off">
+        <span class="auth-role-badge">🎓 Student login</span>
+        <h2>Welcome back!</h2>
+        <p class="auth-sub">Enter your details to open your student dashboard.</p>
+        <div class="field"><label for="loginName">Your name</label><input id="loginName" required maxlength="40" placeholder="e.g. Chiranthan L" /></div>
+        <div class="field"><label for="loginId">Student ID <span class="optional">(optional)</span></label><input id="loginId" maxlength="20" placeholder="e.g. 1HM23CS045" /></div>
+        <p class="auth-error" id="authError" role="alert"></p>
+        <button class="btn btn-primary full-btn" type="submit">Log in as student <span>→</span></button>
+        <div class="auth-switch">Are you a warden? <a href="warden-login.html">Go to warden login</a></div>
+        <a class="auth-back" href="1index.html">← Back to home</a>
+      </form>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
